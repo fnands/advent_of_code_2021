@@ -3,7 +3,7 @@
 
 * `...` can be used to split single func argument into many. Read the [docs](https://docs.julialang.org/en/v1/manual/faq/#What-does-the-...-operator-do?)
 
-* ``` is transpose in Julia
+* `\`` is transpose in Julia
 
 * Can set the rounding mode as 0.5 rounds down by default (ties round to nearest even number by default..)
 

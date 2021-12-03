@@ -53,7 +53,7 @@ function get_rating(rep_arr, rating_type)
 	# Rounding usually rounds to nearest even int in case of tie
         # We don't want this so change rounding mode
 	median_ind = abs(round(Int16, mean_ind, RoundNearestTiesUp)) 
-        if mean_ind != 1.0 && mean_ind != 1.0
+        if mean_ind != 1.0 && mean_ind != 0.0 # Don't do anything if they are all the same
             rep_arr = rep_arr[:,(rep_arr[ind,:] .== median_ind)]
         end
         if length(rep_arr[1,:]) == 1
